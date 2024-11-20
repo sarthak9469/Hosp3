@@ -1,0 +1,127 @@
+/* Ensure the page and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the doctor profile container */
+.doctor-profile {
+    width: 100%;
+    max-width: 1200px; /* Limit the width to a reasonable value */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto; /* Allow scrolling if content overflows */
+    padding-top: 70px; /* Add padding to push content below the navbar */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #837878;
+    color: white;
+    padding: 10px;
+    z-index: 100; /* Ensure the navbar stays on top */
+}
+
+/* Profile details formatting */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Slots list styling */
+.slots-list {
+    margin-bottom: 20px;
+}
+
+.slots-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slots-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Add slot section styling */
+.add-slot {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-slot input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.add-slot button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-slot button:hover {
+    background-color: #45a049;
+}
+
+/* Remove slot button styling */
+.remove-slot-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-slot-btn:hover {
+    background-color: darkred;
+}
+
+/* Update slots button styling */
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Fix for body content overflowing */
+main {
+    padding-top: 70px; /* Ensure there's space for the fixed navbar */
+}
